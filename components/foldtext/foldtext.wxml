@@ -1,0 +1,11 @@
+<!-- pages/components/foldtext/foldtext.wxml -->
+<view class="postscript">
+    <text class="display-require">{{title}}</text>
+    <view class="require">
+        <text class="item" style="-webkit-line-clamp: {{maxLine}}; visible: {{isVisibleText}}">{{desc}}</text>
+        <view class="fold" wx:if="{{isShowFold}}" bindtap="_foldClick">
+            <text class="fold-text" >{{foldStatus}}</text>
+            <image class="fold-image" src="{{foldSrc}}"/>
+        </view>
+    </view>
+</view>

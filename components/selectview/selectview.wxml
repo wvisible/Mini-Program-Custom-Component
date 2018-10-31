@@ -1,0 +1,4 @@
+<!--pages/components/selectview/selectview.wxml-->
+<view class="tab-title">
+    <text wx:for="{{tabTitles}}" data-index="{{index}}" class="title {{activeIndex === index ? 'selected' : ''}}" bindtap="_itemClick">{{item}}</text>
+</view>

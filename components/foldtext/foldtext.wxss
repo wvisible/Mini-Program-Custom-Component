@@ -1,0 +1,36 @@
+/* pages/components/foldtext/foldtext.wxss */
+.postscript {
+  background: white;
+  padding-bottom: 32rpx;
+}
+.display-require {
+  margin-left: 32rpx;
+  font-size: 28rpx;
+  color: #666666;
+}
+.require {
+  margin-top: 8rpx;
+  padding-left: 32rpx;
+}
+.require .item {
+  font-size: 32rpx;
+  line-height: 44rpx;
+  color: #333333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.fold {
+  display: flex;
+  margin-top: 8rpx;
+}
+.fold .fold-text {
+  font-size: 32rpx;
+  color: #3a8dd6;
+}
+.fold .fold-image {
+  width: 48rpx;
+  height: 48rpx;
+}

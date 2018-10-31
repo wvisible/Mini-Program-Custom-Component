@@ -1,0 +1,11 @@
+<!-- pages/components/spinner/spinner.wxml -->
+<view class="spinner">
+    <view class="select" catchtap='_selectTap'>
+        <text class="select-text" style="color:{{selectTextColor}};">{{selectText}}</text>
+        <image class="select-img {{show ? 'select-img-rotate' : ''}}" src="/image/icon_unfold.png" />
+    </view>
+    <view class='option-box' wx:if="{{show}}" style="height:{{show ? selectData.length * 64 : 0}}rpx;">
+        <text class='option' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='_optionTap'>{{item}}</text>
+    </view>
+    <slot wx:if="{{isShowOther}}"></slot>
+</view>

@@ -1,0 +1,38 @@
+.scroll-view {
+  width: 100%;
+  background: white;
+  border-bottom: 1rpx solid #ccc;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.navbar {
+  position: relative;
+}
+.navbar .navbar-item {
+  color: #333333;
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 14rpx;
+}
+.navbar .navbar-item.item-on {
+  color: #E61E2B;
+}
+.navbar .navbar-item .title {
+  font-size: 30rpx;
+  text-align: center;
+  display: inline-block;
+}
+.navbar .navbar-slider {
+  height: 2rpx;
+  background-color: #E61E2B;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+}

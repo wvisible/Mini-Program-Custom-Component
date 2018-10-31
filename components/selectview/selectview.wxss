@@ -1,0 +1,17 @@
+.tab-title {
+  margin-top: 42rpx;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+.tab-title .title {
+  border: 2rpx solid #dddddd;
+  font-size: 28rpx;
+  color: #333333;
+  display: inline-block;
+  width: 160rpx;
+  height: 48rpx;
+}
+.tab-title .title.selected {
+  color: #ffffff;
+  background: #e61e2b;
+}
