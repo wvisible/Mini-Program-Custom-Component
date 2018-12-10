@@ -36,7 +36,7 @@ Component({
           (wx.getSystemInfoSync().windowWidth / 4 - res[0].width) / 2,
           sliderWidth: res[0].width,
           scrollLeft:
-          res[0].width + (index - 2) * (wx.getSystemInfoSync().windowWidth / 4)
+          wx.getSystemInfoSync().windowWidth / 8 + (index - 2) * (wx.getSystemInfoSync().windowWidth / 4)
         });
       });
       this.triggerEvent("selecttab", { index: index });
