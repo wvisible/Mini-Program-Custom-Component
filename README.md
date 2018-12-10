@@ -3,7 +3,7 @@
 一般在多个地方会使用到的 view，我们都可以写成一个组件，以方便复用，小程序自定义组件的相关内容我们可以在这里[自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html)找到，下面我通过自己定义的几个组件讲述小程序自定义组件开发的一般步骤。
 #### 效果图
 ![](https://github.com/wvisible/Mini-Program-Custom-Component/blob/master/image/demonstrate.gif)
-##### 一、选择 view
+#### 一、选择 view
 
 我们看上图第一个 view 可以看出，很简单的选择器，选择哪个view，哪一个view就改变背景色以及字体颜色，这种实现起来很简单，我先通过一个简单的 view 来说明一下自定义组件的步骤。我的思路就是用列表渲染来做，当需要使用的时候传入相应的数据，直接根据数据渲染成相应的 view 块。布局很简单，我们先看 wxml:
 
@@ -162,6 +162,9 @@ query.exec();
 ```
 
 我们先获取整个内容高度，然后判断高度是否超过了2行的高度，然后展示相应的展开与收起，我们必须动态的设置最大行数，因为最小的时候我们设置为一个定值，当展开的时候我们无法得知内容会占满多少行，我们可以设置一个较大的数值，比如1000，这样点击展开和收起就可以实现内容的展开和关闭，具体可以看代码。
+
+#### 最后
+初次入门，难免会有问题，如果遇到有任何问题或者写错的地方，欢迎指出和一起探讨！
 
 ### License
 Wechat-Mini-Gank is licensed under the MIT license. See the LICENSE.txt file for more information.
